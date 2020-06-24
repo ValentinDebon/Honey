@@ -33,12 +33,11 @@ You should be able to configure and build it with:
 make
 ```
 
+Note sometimes configure might fail because ld requires runtime components.
+You can easily solve this by setting the LD to the used compiler.
+The latest usually encapsulates linking well.
+
 ## Documentation
-
-man pages for the command line utility is built using
-[uman](https://github.com/HeylelOS/uman):
-
-	uman -o man/hny.1 uman/hny.1.md
 
 HTML documentation for the library are built using
 [Doxygen](https://github.com/doxygen/doxygen):
@@ -47,7 +46,7 @@ HTML documentation for the library are built using
 
 ## Tests
 
-You should be able to run tests by executing:
+You should be able to test the currently installed version by executing, just change your PATH to test another:
 
-	make test
+	./test/hny/test.sh
 
